@@ -432,7 +432,7 @@ typedef enum _UNWIND_OP_CODES {
     UWOP_PUSH_NONVOL = 0, /* info == register number */
     UWOP_ALLOC_LARGE,     /* no info, alloc size in next 2 slots */
     UWOP_ALLOC_SMALL,     /* info == size of allocation / 8 - 1 */
-    UWOP_SET_FPREG,       /* no info, FP = RSP + UNWIND_INFO.FPRegOffset*16 */
+    UWOP_SET_FPREG,       /* no info, FP = RSP + UNWIND_INFO.FrameOffset*16 */
     UWOP_SAVE_NONVOL,     /* info == register number, offset in next slot */
     UWOP_SAVE_NONVOL_FAR, /* info == register number, offset in next 2 slots */
     UWOP_SAVE_XMM128 = 8, /* info == XMM reg number, offset in next slot */
